@@ -22,4 +22,7 @@ spec:
           - 'key': 'nautilus.io/sdsuinstruction'
             'operator': 'In'
             'values': ["true"]
-    
+  tolerations:
+    - effect: NoSchedule
+      key: nautilus.io/sdsu-fix
+      operator: Exists
